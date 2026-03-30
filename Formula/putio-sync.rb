@@ -5,20 +5,20 @@
 class PutioSync < Formula
   desc "Put.io folder sync app"
   homepage "https://github.com/putdotio/putio-sync"
-  version "2.1.3"
+  version "2.1.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/putdotio/putio-sync/releases/download/v2.1.3/putio-sync_2.1.3_darwin_amd64.tar.gz"
-      sha256 "323e775018a486a556ff8fe4330c16e539ce6b3068bd971f9f8dd5a9c49b49a1"
+      url "https://github.com/putdotio/putio-sync/releases/download/v2.1.4/putio-sync_2.1.4_darwin_amd64.tar.gz"
+      sha256 "63c4dd421eba8cb66c5da5e86b454ad67f59f21c7de04700d2c2b3b88db100d3"
 
       define_method(:install) do
         bin.install "putio-sync"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/putdotio/putio-sync/releases/download/v2.1.3/putio-sync_2.1.3_darwin_arm64.tar.gz"
-      sha256 "dee163a044e4c300e63b965a1fefc1670ad51ea498329350a315be075d55d290"
+      url "https://github.com/putdotio/putio-sync/releases/download/v2.1.4/putio-sync_2.1.4_darwin_arm64.tar.gz"
+      sha256 "dc75f74e31de6cf2edda3fc38b98f2856881f2d0cf4395ccff31ac0a936654bd"
 
       define_method(:install) do
         bin.install "putio-sync"
@@ -28,15 +28,15 @@ class PutioSync < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/putdotio/putio-sync/releases/download/v2.1.3/putio-sync_2.1.3_linux_amd64.tar.gz"
-      sha256 "73fc57732a5952957c6666c05a2ce90866876a557b620e69cd62a881e98b36a7"
+      url "https://github.com/putdotio/putio-sync/releases/download/v2.1.4/putio-sync_2.1.4_linux_amd64.tar.gz"
+      sha256 "16f2a25fbc4c7710ce1410959bec139a11f7b742ad4497bfc566798077d9e171"
       define_method(:install) do
         bin.install "putio-sync"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/putdotio/putio-sync/releases/download/v2.1.3/putio-sync_2.1.3_linux_arm64.tar.gz"
-      sha256 "ad4eaf45a49e4fb02cb2d30e6e042a3e09ed061d373fe66cb8a029cf9b8a6ab2"
+      url "https://github.com/putdotio/putio-sync/releases/download/v2.1.4/putio-sync_2.1.4_linux_arm64.tar.gz"
+      sha256 "a8123d74ca6df0c6a25ac0d3dffe3061eece247c6a2095c2c8030acce53970e5"
       define_method(:install) do
         bin.install "putio-sync"
       end
