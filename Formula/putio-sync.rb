@@ -5,20 +5,20 @@
 class PutioSync < Formula
   desc "Put.io folder sync app"
   homepage "https://github.com/putdotio/putio-sync"
-  version "2.1.2"
+  version "2.1.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/putdotio/putio-sync/releases/download/v2.1.2/putio-sync_2.1.2_darwin_amd64.tar.gz"
-      sha256 "9835bb003851a3f04d71f87042ae8211c540c34ce2b09564aec7e526fed9a136"
+      url "https://github.com/putdotio/putio-sync/releases/download/v2.1.3/putio-sync_2.1.3_darwin_amd64.tar.gz"
+      sha256 "323e775018a486a556ff8fe4330c16e539ce6b3068bd971f9f8dd5a9c49b49a1"
 
       define_method(:install) do
         bin.install "putio-sync"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/putdotio/putio-sync/releases/download/v2.1.2/putio-sync_2.1.2_darwin_arm64.tar.gz"
-      sha256 "2da5d505921fff2949e52a5176a52643c55a3e21d80d1ae082a1c4d7bbe0ba31"
+      url "https://github.com/putdotio/putio-sync/releases/download/v2.1.3/putio-sync_2.1.3_darwin_arm64.tar.gz"
+      sha256 "dee163a044e4c300e63b965a1fefc1670ad51ea498329350a315be075d55d290"
 
       define_method(:install) do
         bin.install "putio-sync"
@@ -28,8 +28,15 @@ class PutioSync < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/putdotio/putio-sync/releases/download/v2.1.2/putio-sync_2.1.2_linux_amd64.tar.gz"
-      sha256 "01a99fec0196ab3a3450f33b23525c20e24de90fa562005e64a05244bdc73485"
+      url "https://github.com/putdotio/putio-sync/releases/download/v2.1.3/putio-sync_2.1.3_linux_amd64.tar.gz"
+      sha256 "73fc57732a5952957c6666c05a2ce90866876a557b620e69cd62a881e98b36a7"
+      define_method(:install) do
+        bin.install "putio-sync"
+      end
+    end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/putdotio/putio-sync/releases/download/v2.1.3/putio-sync_2.1.3_linux_arm64.tar.gz"
+      sha256 "ad4eaf45a49e4fb02cb2d30e6e042a3e09ed061d373fe66cb8a029cf9b8a6ab2"
       define_method(:install) do
         bin.install "putio-sync"
       end
