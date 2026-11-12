@@ -5,22 +5,22 @@
 class PutioCli < Formula
   desc "Agent-first cli for the put.io api"
   homepage "https://github.com/putdotio/putio-cli"
-  url "https://github.com/putdotio/putio-cli/archive/refs/tags/v1.10.3.tar.gz"
-  version "1.10.3"
-  sha256 "8ac26ab508594144d3d8fb6c743416db8f7bcf00368e4bcd10af9d07c42dfab1"
+  url "https://github.com/putdotio/putio-cli/archive/refs/tags/v1.10.4.tar.gz"
+  version "1.10.4"
+  sha256 "4f1e23d01627826cc7d7139dc07de62bb9c95fd4798c308d8ae261170a74daf8"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/putdotio/putio-cli/releases/download/v1.10.3/putio-cli-1.10.3-darwin-arm64.tar.gz"
-      sha256 "4b3322e3a7174f3cadc3046df7086f430eae6cf5a6706a877e2d4a81d0376998"
+      url "https://github.com/putdotio/putio-cli/releases/download/v1.10.4/putio-cli-1.10.4-darwin-arm64.tar.gz"
+      sha256 "00d040e03336ede0fffea3c2868a635366360d7478155703d5e541b6568084d3"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/putdotio/putio-cli/releases/download/v1.10.3/putio-cli-1.10.3-linux-amd64.tar.gz"
-      sha256 "7def5f9a831bcda23b1c2c3eda6ef7ece0a00db09e9e814dc8973c592164958a"
+      url "https://github.com/putdotio/putio-cli/releases/download/v1.10.4/putio-cli-1.10.4-linux-amd64.tar.gz"
+      sha256 "76cbcbe3d9e6211c904c2fc52472d8f775cd0ec49384c07173ad9d5679be1521"
     end
   end
 
