@@ -5,9 +5,9 @@
 class PutioCli < Formula
   desc "Agent-first cli for the put.io api"
   homepage "https://github.com/putdotio/putio-cli"
-  url "https://github.com/putdotio/putio-cli/archive/refs/tags/v1.10.6.tar.gz"
+  url "https://github.com/putdotio/putio-cli/archive/refs/tags/v1.10.7.tar.gz"
   version "1.10.6"
-  sha256 "18653766cb170aac03cf4fc570ee76a6693926d1a7d240cf61b574db613a8f0c"
+  sha256 "c1ce39d4fe95e4f0fa66b69ee0adb8b023862573cc04f6303098036f10d3f9b5"
   license "MIT"
 
   on_macos do
